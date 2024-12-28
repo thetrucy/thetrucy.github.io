@@ -4,16 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>For You</title>
-  <link rel="stylesheet" href="./src/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 <body>
-  <h1 id="demo">Will you be my boyfriend?</h1>
-  <h1 id="new"></h1>
-  <div class="button-container">
-    <button class="yes-button" onclick="spawnHearts()">Yes</button>
-    <button class="no-button">No</button>
-  </div>
-  <script src="./src/index.jsx"></script>
-  </script>
+  <header>
+    <nav class="navigation">
+      <a href="#text" class="active">Home</a>
+      <a href="#mess">Message</a>
+      <a href="#ques">Question</a>
+    </nav>
+  </header>
+  <section class="home">
+    <h1 id="text">Hello, Otis</h1>
+    <img src="./src/hill1.png" id="hill1">
+    <img src="./src/hill2.png" id="hill2">
+    <img src="./src/hill3.png" id="hill3">
+    <img src="./src/hill4.png" id="hill4">
+    <img src="./src/hill5.png" id="hill5">
+    <img src="./src/leaf.png" id="leaf">
+    <img src="./src/plant.png" id="plant">
+    <img src="./src/tree.png" id="tree">
+  </section>
+
+  <section class="sec">
+    <h2 id="mess" data-text="Something I really like about you">Something I really like about you</h2>
+    <p id="typedtext"></p>
+    <i id="heart2" class="fas fa-heart"></i>
+  </section>
+
+  <section class="sec2">
+    <h2 id="ques" class="type">Will you be my boyfriend?</h2>
+    <h1 id="new" class="type"></h1>
+    <div class="button-container">
+      <button class="yes-button" onclick="spawnHearts()">Yes</button>
+      <button class="no-button">No</button>
+    </div>
+  </section>
+  <script src="./src/index.js"></script>
 </body>
 </html>
+
